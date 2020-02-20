@@ -8,7 +8,7 @@ from phone_config_dataset import PhoneConfig, PhoneDataSet
 from mrcnn.model import MaskRCNN
 
 logger = logging.getLogger(__name__)
-logger.disabled = PARAMS['trainer_logging_disable']
+logger.disabled = PARAMS['disable_trainer_logging']
 
 
 def train_model_from_dataset(path):
@@ -26,8 +26,8 @@ def train_model_from_dataset(path):
         model = MaskRCNN(mode='training', model_dir=PARAMS['training_model_path'], config=config)
         model.keras_model.metrics_tensors = []
         logger.info('Loading weights')
-        if PARAMS['model_file_path']:
-            model_weights = PARAMS['model_file_path']
+        if PARAMS['trained_weights_file_path']:
+            model_weights = PARAMS['trained_weights_file_path']
         else:
             model_weights = model.get_imagenet_weights()
         model.load_weights(model_weights, by_name=True,

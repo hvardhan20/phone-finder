@@ -9,9 +9,6 @@ import os
 import sys
 import logging
 
-stderr = sys.stderr
-sys.stderr = open(os.devnull, 'w')
-
 __PARAMS_PATH = "./config/params.json"
 __LOGGING_PATH = "./config/logging.yaml"
 
@@ -27,6 +24,10 @@ with open(__LOGGING_PATH, 'rt') as f:
     except Exception as e:
         print(e)
 
+if PARAMS['disable_error_reporting']:
+    stderr = sys.stderr
+    sys.stderr = open(os.devnull, 'w')
+
 
 def update_params_with_latest_model():
     global PARAMS
@@ -39,7 +40,7 @@ def update_params_with_latest_model():
 
         with open(__PARAMS_PATH, "rt") as jsonFile:
             data = json.load(jsonFile)
-            data["model_file_path"] = latest_model
+            data["trained_weights_file_path"] = latest_model
             PARAMS = data
 
         with open(__PARAMS_PATH, "wt") as jsonFile:

@@ -1,6 +1,6 @@
 {
     "training_model_path": "./training_model",
-    "model_file_path": "",
+    "trained_weights_file_path": "mask_rcnn_phone_cfg_0010.h5",
     "class_config_name": "phone_cfg",
     "number_of_epoch_steps": 150,
     "number_of_epochs": 10,
@@ -9,6 +9,7 @@
     "bbox_y_offset": 23,
     "test_size": 0.1,
     "random_seed": 3,
-    "find_phone_logging_disable": false,
-    "trainer_logging_disable": false
+    "disable_find_phone_logging": false,
+    "disable_trainer_logging": false,
+    "disable_error_reporting": true
 }

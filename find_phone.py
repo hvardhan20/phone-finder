@@ -12,7 +12,7 @@ from phone_config_dataset import PredictionConfig, normalize
 from mrcnn.model import MaskRCNN, mold_image
 
 logger = logging.getLogger(__name__)
-logger.disabled = PARAMS['find_phone_logging_disable']
+logger.disabled = PARAMS['disable_find_phone_logging']
 
 
 class PhoneFinder:
@@ -84,10 +84,17 @@ def show_prediction(img, normed, images_dir, image_file, centroid=None):
 
 
 def main(args):
-    path = args.path
+    try:
+        path = args.path
+    except Exception as e:
+        logger.error('Path to image not provided', e)
+        exit(1)
     if path[-1] != '/' or path[-1] != '\\':
         path += '/'
-    model_file = PARAMS['model_file_path']
+    model_file = PARAMS['trained_weights_file_path']
+    if not model_file:
+        logger.error("Enter a valid path for trained model file")
+        exit(1)
     logger.info(f'Loading model from file {model_file}')
     finder = PhoneFinder(model_file)
     if os.path.isfile(path):
@@ -108,8 +115,13 @@ def main(args):
 
 
 if __name__ == '__main__':
-    # update_params_with_latest_model()
-    parser = argparse.ArgumentParser(description="Phone finder")
-    parser.add_argument("path", help="Path to the image to be tested")
-    args = parser.parse_args()
+    try:
+        # update_params_with_latest_model()
+        parser = argparse.ArgumentParser(description="Phone finder")
+        parser.add_argument("path", help="Path to the image to be tested")
+        args = parser.parse_args()
+    except:
+        print("Yo")
+        logger.error("Error parsing command line arguments. Please provide an image path")
+        exit(1)
     main(args)
