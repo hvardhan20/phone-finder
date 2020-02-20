@@ -9,8 +9,8 @@ import os
 import sys
 import logging
 
-__PARAMS_PATH = "./config/params.json"
-__LOGGING_PATH = "./config/logging.yaml"
+__PARAMS_PATH = "config/params.json"
+__LOGGING_PATH = "config/logging.yaml"
 
 with open(__PARAMS_PATH, "rt") as f:
     PARAMS = json.load(f)

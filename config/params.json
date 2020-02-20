@@ -10,7 +10,7 @@
     "number_of_classes": 2,
     "bbox_x_offset": 25,
     "bbox_y_offset": 25,
-    "test_size": 0.1,
+    "test_size": 0.2,
     "random_seed": 3,
     "disable_find_phone_logging": false,
     "disable_trainer_logging": false,
