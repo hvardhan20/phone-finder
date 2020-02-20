@@ -19,9 +19,11 @@ __PARAMS_PATH = "./config/params.json"
 __LOGGING_PATH = "./config/logging.yaml"
 
 with open(__PARAMS_PATH, "rt") as f:
+    print("opened")
     PARAMS = json.load(f)
 
 with open(__LOGGING_PATH, 'rt') as f:
+    print("logging")
     config = safe_load(f.read())
     logging.config.dictConfig(config)
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
