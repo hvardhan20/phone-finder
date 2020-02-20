@@ -12,8 +12,8 @@ import logging
 stderr = sys.stderr
 sys.stderr = open(os.devnull, 'w')
 
-__PARAMS_PATH = "/content/phone-finder/config/params.json"
-__LOGGING_PATH = "/content/phone-finder/config/logging.yaml"
+__PARAMS_PATH = "./config/params.json"
+__LOGGING_PATH = "./config/logging.yaml"
 
 with open(__PARAMS_PATH, "rt") as f:
     PARAMS = json.load(f)

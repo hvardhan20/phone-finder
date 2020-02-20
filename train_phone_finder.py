@@ -49,8 +49,8 @@ def main(args):
     if path[-1] != '/' or path[-1] != '\\':
         path += '/'
 
-    if train_model_from_dataset(path):
-        update_params_with_latest_model()
+    # if train_model_from_dataset(path):
+    update_params_with_latest_model()
 
 
 if __name__ == '__main__':
