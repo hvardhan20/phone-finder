@@ -36,9 +36,9 @@ class PhoneConfig(Config):
     # Distinct configuration name
     NAME = PARAMS['class_config_name']
     # Number of classes. In this case background & phone
-    NUM_CLASSES = 2
+    NUM_CLASSES = PARAMS["number_of_classes"]
     # Number of training steps per epoch
-    STEPS_PER_EPOCH = 100
+    STEPS_PER_EPOCH = PARAMS["number_of_epoch_steps"]
 
 
 class PhoneDataSet(Dataset):

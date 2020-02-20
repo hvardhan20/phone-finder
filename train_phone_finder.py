@@ -33,7 +33,7 @@ def train_model_from_dataset(path):
         model.load_weights(PARAMS['model_file_path'], by_name=True,
                            exclude=["mrcnn_class_logits", "mrcnn_bbox_fc", "mrcnn_bbox", "mrcnn_mask"])
         logger.info('Starting model training...')
-        model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=3, layers='heads')
+        model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'], layers='heads')
         return True
     except Exception as e:
         logger.error("Error while training the model", e)

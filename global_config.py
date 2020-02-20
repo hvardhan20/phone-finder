@@ -33,8 +33,8 @@ with open(__LOGGING_PATH, 'rt') as f:
         print("logging 3")
         logging.getLogger('tensorflow').disabled = True
         print("finished logging")
-    except:
-        pass
+    except Exception as e:
+        print(e)
 
 def update_params_with_latest_model():
     global PARAMS

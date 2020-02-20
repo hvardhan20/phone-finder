@@ -4,6 +4,7 @@
     "class_config_name": "phone_cfg",
     "number_of_epoch_steps": 150,
     "number_of_epochs": 5,
+    "number_of_classes": 2,
     "bbox_x_offset": 24,
     "bbox_y_offset": 24,
     "find_phone_logging_disable": false,
