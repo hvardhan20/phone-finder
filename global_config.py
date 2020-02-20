@@ -25,8 +25,11 @@ with open(__PARAMS_PATH, "rt") as f:
 with open(__LOGGING_PATH, 'rt') as f:
     print("logging")
     config = safe_load(f.read())
+    print("logging 1")
     logging.config.dictConfig(config)
+    print("logging 2")
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+    print("logging 3")
     logging.getLogger('tensorflow').disabled = True
     print("finished logging")
 
