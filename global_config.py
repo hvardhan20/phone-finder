@@ -1,7 +1,6 @@
 """
 Author: Harshavardhan
 """
-print("At the begining")
 import logging.config
 from yaml import safe_load
 import json
@@ -10,10 +9,8 @@ import os
 import sys
 import logging
 
-print("here")
 stderr = sys.stderr
 sys.stderr = open(os.devnull, 'w')
-print("before starting")
 
 __PARAMS_PATH = "/content/phone-finder/config/params.json"
 __LOGGING_PATH = "/content/phone-finder/config/logging.yaml"
@@ -24,17 +21,13 @@ with open(__PARAMS_PATH, "rt") as f:
 
 with open(__LOGGING_PATH, 'rt') as f:
     try:
-        print("logging")
         config = safe_load(f.read())
-        print("logging 1")
         logging.config.dictConfig(config)
-        print("logging 2")
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-        print("logging 3")
         logging.getLogger('tensorflow').disabled = True
-        print("finished logging")
     except Exception as e:
         print(e)
+
 
 def update_params_with_latest_model():
     global PARAMS

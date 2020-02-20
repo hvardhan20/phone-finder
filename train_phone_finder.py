@@ -1,13 +1,10 @@
 """
 Author: Harshavardhan
 """
-print('Started')
 import argparse
 import logging
 from global_config import PARAMS, update_params_with_latest_model
-print("finished cloading config")
 from phone_config_dataset import PhoneConfig, PhoneDataSet
-print("imported configs")
 from mrcnn.model import MaskRCNN
 
 logger = logging.getLogger(__name__)
@@ -15,7 +12,6 @@ logger.disabled = PARAMS['trainer_logging_disable']
 
 
 def train_model_from_dataset(path):
-    print("training model")
     try:
         trainset = PhoneDataSet(path)
         trainset.load_dataset(purpose='train')
@@ -51,9 +47,8 @@ def main(args):
     if train_model_from_dataset(path):
         update_params_with_latest_model()
 
-print("Name is ", __name__)
+
 if __name__ == '__main__':
-    print("main")
     parser = argparse.ArgumentParser(description="Phone finder model trainer")
     parser.add_argument("path", help="Data set path to train")
     args = parser.parse_args()
