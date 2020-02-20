@@ -58,7 +58,6 @@ if PARAMS['trained_weights_file_path']:
     model_weights = PARAMS['trained_weights_file_path']
 else:
     model_weights = model.get_imagenet_weights()
-print('Loading')
 model.load_weights(model_weights, by_name=True)
 # evaluate model on training dataset
 train_mAP = evaluate_model(trainset, model, config)
