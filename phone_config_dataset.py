@@ -42,6 +42,8 @@ class PhoneConfig(Config):
     NUM_CLASSES = PARAMS["number_of_classes"]
     # Number of training steps per epoch
     STEPS_PER_EPOCH = PARAMS["number_of_epoch_steps"]
+    # Learning rate
+    LEARNING_RATE = PARAMS["learning_rate"]
 
 
 class PhoneDataSet(Dataset):

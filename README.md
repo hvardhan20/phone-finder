@@ -21,71 +21,54 @@ Besides Mask R-CNN, there are other packages that are required and are installed
 
 ### Initializing
 
-This project is highly configurable via the `./config/params.json` file. You can
+This program is highly configurable via the `./config/params.json` file. You can configure the locations of
+training checkpoint models, hyperparameters like number of epochs and number of steps 
+in each epoch, learning rate, layers to trains and exclude. You can also disable logging in trainer
+and finder module. Details about each param is listed below
 
 
 ```
-Give the example
+{
+    "training_model_path": "<checkpoint path for the model being trained>",
+    "trained_weights_file_path": "<Pre-trained COCO weights file for training on top of that and for Prediction>",
+    "class_config_name": "<configuration name for the class being identified>",
+    "number_of_epoch_steps": <number of steps in each epoch>,
+    "number_of_epochs": <number of epochs>,
+    "learning_rate": <learning rate to train with. Default is 0.001>,
+    "layers": "<layers to train. Default is 'all'>",
+    "layers_to_exclude_while_training": ["<List of strings specifying the layers in the pre-trained weights to exlude from training>"],
+    "number_of_classes": <Number of classes to detect. Here, its phone and the background (BG is always present)>,
+    "bbox_x_offset": <Horizontal offset used to create bounding box around the phone using the annotated center of phone>,,
+    "bbox_y_offset": <Vertical offset used to create bounding box around the phone using the annotated center of phone>,
+    "test_size": <Test split from the dataset. Train split is calculated accordingly>,
+    "random_seed": <Random seed for shuffling dataset>,
+    "disable_find_phone_logging": <Boolean value as false or true. true for disable logging>,
+    "disable_trainer_logging": <Boolean value as false or true. true for disable logging>,
+    "disable_error_reporting": <Boolean value as false or true. true for disable logging>
+}
 ```
 
-And repeat
+## Training the model
+
+Tune the hyperparameters from `./config/params.json` and run `train_phone_finder.py` with path to 
+image data set directory with the `labels.txt` inside the path as
 
 ```
-until finished
+python train_phone_finder.py ./images
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+##### **CAVEAT**
+Model training can take a long time if you're running without a significantly powerful GPU on the system.
+Please train the model on a system with CUDA enabled card with compute compatibility higher than 3.5
 
-## Running the tests
+If you cannot train a model, you can use the model bundled with this program.
 
-Explain how to run the automated tests for this system
+## Running the tests - Predictions
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+After the model is trained, the new model file path is automatically updated in the `./config/params.json`.
+Please execute the `find_phone.py` with the path to image or directory of images to be predicted like 
 ```
-Give an example
-```
+python find_phone.py ./images/21.jpg
+``` 
+Detection of phone does not take as long as training does and is quite fast
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc

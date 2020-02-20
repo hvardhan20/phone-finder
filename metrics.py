@@ -60,8 +60,8 @@ else:
     model_weights = model.get_imagenet_weights()
 model.load_weights(model_weights, by_name=True)
 # evaluate model on training dataset
-train_mAP = evaluate_model(trainset, model, config)
-print("Train mAP: %.3f" % train_mAP)
+train_mean_abs_precision = evaluate_model(trainset, model, config)
+print("Train mAP: %.3f" % train_mean_abs_precision)
 # evaluate model on test dataset
-test_mAP = evaluate_model(testset, model, config)
-print("Test mAP: %.3f" % test_mAP)
+test_mean_abs_precision = evaluate_model(testset, model, config)
+print("Test mAP: %.3f" % test_mean_abs_precision)
