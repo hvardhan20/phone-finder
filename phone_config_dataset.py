@@ -21,7 +21,10 @@ def denormalize(norm_x, norm_y, w=490, h=326):
 
 
 def get_bbox(x, y, x_offset=PARAMS['bbox_x_offset'], y_offset=PARAMS['bbox_y_offset']):
-    bbox = [round(x - x_offset), round(y - y_offset), round(x + x_offset), round(y + y_offset)]
+    bbox = [round(x - x_offset) if (x - x_offset) > 0 else 0,
+            round(y - y_offset) if (y - y_offset) > 0 else 0,
+            round(x + x_offset) if (x + x_offset) > 0 else 0,
+            round(y + y_offset) if (y + y_offset) > 0 else 0]
     return [int(i) for i in bbox]
 
 
@@ -87,10 +90,10 @@ class PhoneDataSet(Dataset):
         info = self.image_info[image_id]
         box, w, h = self.extract_boxes(info['filename'])
         # create one array for all masks, each on a different channel
-        masks = np.zeros([h, w, 3], dtype='uint8')
+        masks = np.zeros([h, w, 1], dtype='uint8')
         # create masks
         class_ids = list()
-        for i in range(3):
+        for i in range(1):
             row_s, row_e = box[1], box[3]
             col_s, col_e = box[0], box[2]
             masks[row_s:row_e, col_s:col_e, i] = 1

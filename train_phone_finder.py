@@ -6,6 +6,8 @@ import logging
 from global_config import PARAMS, update_params_with_latest_model
 from phone_config_dataset import PhoneConfig, PhoneDataSet
 from mrcnn.model import MaskRCNN
+from mrcnn.visualize import display_instances
+from mrcnn.utils import extract_bboxes
 
 logger = logging.getLogger(__name__)
 logger.disabled = PARAMS['disable_trainer_logging']
@@ -20,6 +22,19 @@ def train_model_from_dataset(path):
         testset = PhoneDataSet(path)
         testset.load_dataset(purpose='test')
         testset.prepare()
+
+        # for image_id in range(130):
+        #     try:
+        #         image = trainset.load_image(image_id)
+        #         # load the masks and the class ids
+        #         mask, class_ids = trainset.load_mask(image_id)
+        #         # extract bounding boxes from the masks
+        #         bbox = extract_bboxes(mask)
+        #         # display image with masks and bounding boxes
+        #         display_instances(image, bbox, mask, class_ids, trainset.class_names)
+        #     except:
+        #         continue
+
 
         config = PhoneConfig()
         logger.info('Creating a Mask R-CNN model')

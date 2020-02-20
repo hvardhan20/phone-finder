@@ -15,3 +15,19 @@
 2020-02-20 02:03:23,161 - INFO - metrics.py @56 : <module>() - Loading weights
 2020-02-20 02:07:08,055 - INFO - train_phone_finder.py @25 : train_model_from_dataset() - Creating a Mask R-CNN model
 2020-02-20 02:07:33,453 - INFO - train_phone_finder.py @25 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:36:05,108 - INFO - train_phone_finder.py @25 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:36:11,432 - INFO - train_phone_finder.py @28 : train_model_from_dataset() - Loading weights
+2020-02-20 02:36:32,221 - INFO - train_phone_finder.py @25 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:36:38,412 - INFO - train_phone_finder.py @28 : train_model_from_dataset() - Loading weights
+2020-02-20 02:37:07,090 - INFO - train_phone_finder.py @25 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:37:13,289 - INFO - train_phone_finder.py @28 : train_model_from_dataset() - Loading weights
+2020-02-20 02:37:19,341 - INFO - train_phone_finder.py @35 : train_model_from_dataset() - Starting model training...
+2020-02-20 02:42:17,453 - INFO - train_phone_finder.py @36 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:43:25,066 - INFO - train_phone_finder.py @36 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:45:08,094 - INFO - train_phone_finder.py @36 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:46:23,211 - INFO - train_phone_finder.py @37 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:47:02,814 - INFO - train_phone_finder.py @37 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:48:39,695 - INFO - train_phone_finder.py @37 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:48:54,109 - INFO - train_phone_finder.py @37 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 02:54:46,399 - INFO - train_phone_finder.py @40 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-20 03:02:11,140 - INFO - train_phone_finder.py @40 : train_model_from_dataset() - Creating a Mask R-CNN model
