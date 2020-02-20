@@ -121,7 +121,6 @@ if __name__ == '__main__':
         parser.add_argument("path", help="Path to the image to be tested")
         args = parser.parse_args()
     except:
-        print("Yo")
         logger.error("Error parsing command line arguments. Please provide an image path")
         exit(1)
     main(args)
