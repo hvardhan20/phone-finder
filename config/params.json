@@ -3,7 +3,7 @@
     "trained_weights_file_path": "mask_rcnn_coco.h5",
     "class_config_name": "phone_cfg",
     "number_of_epoch_steps": 150,
-    "number_of_epochs": 10,
+    "number_of_epochs": 5,
     "number_of_classes": 2,
     "bbox_x_offset": 30,
     "bbox_y_offset": 30,
