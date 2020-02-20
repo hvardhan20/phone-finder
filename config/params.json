@@ -1,6 +1,6 @@
 {
-    "training_model_path": "./training_model",
-    "model_file_path": "./training_model\\phone_cfgdss\\mask_rcnn_phone_cfg_0003.h5",
+    "training_model_path": "./",
+    "model_file_path": "/content/drive/My Drive/model.h5",
     "class_config_name": "phone_cfg",
     "number_of_epoch_steps": 150,
     "number_of_epochs": 5,
