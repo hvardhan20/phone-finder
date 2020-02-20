@@ -1,6 +1,7 @@
 """
 Author: Harshavardhan
 """
+print('Started')
 import argparse
 import logging
 from global_config import PARAMS, update_params_with_latest_model
@@ -49,6 +50,7 @@ def main(args):
 
 
 if __name__ == '__main__':
+    print("main")
     parser = argparse.ArgumentParser(description="Phone finder model trainer")
     parser.add_argument("path", help="Data set path to train")
     args = parser.parse_args()

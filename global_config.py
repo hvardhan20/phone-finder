@@ -1,6 +1,7 @@
 """
 Author: Harshavardhan
 """
+print("At the begining")
 import logging.config
 from yaml import safe_load
 import json
@@ -8,8 +9,11 @@ import glob
 import os
 import sys
 import logging
+
+print("here")
 stderr = sys.stderr
 sys.stderr = open(os.devnull, 'w')
+print("before starting")
 
 __PARAMS_PATH = "./config/params.json"
 __LOGGING_PATH = "./config/logging.yaml"
