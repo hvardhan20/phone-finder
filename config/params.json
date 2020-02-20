@@ -1,0 +1,11 @@
+{
+    "training_model_path": "./training_model",
+    "model_file_path": "./training_model\\phone_cfgdss\\mask_rcnn_phone_cfg_0003.h5",
+    "class_config_name": "phone_cfg",
+    "number_of_epoch_steps": 150,
+    "number_of_epochs": 5,
+    "bbox_x_offset": 24,
+    "bbox_y_offset": 24,
+    "find_phone_logging_disable": false,
+    "trainer_logging_disable": false
+}

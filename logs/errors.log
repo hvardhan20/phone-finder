@@ -1,0 +1,216 @@
+2020-02-19 18:01:04,197 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_58', 'source': 'dataset', 'path': './images/_58.jpg', 'filename': '_58.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_58.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_58.jpg'
+2020-02-19 18:01:04,648 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_45', 'source': 'dataset', 'path': './images/_45.jpg', 'filename': '_45.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_45.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_45.jpg'
+2020-02-19 18:01:04,658 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_121', 'source': 'dataset', 'path': './images/_121.jpg', 'filename': '_121.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_121.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_121.jpg'
+2020-02-19 18:01:54,486 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_127', 'source': 'dataset', 'path': './images/_127.jpg', 'filename': '_127.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_127.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_127.jpg'
+2020-02-19 18:01:54,497 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_60', 'source': 'dataset', 'path': './images/_60.jpg', 'filename': '_60.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_60.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_60.jpg'
+2020-02-19 18:01:54,868 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_29', 'source': 'dataset', 'path': './images/_29.jpg', 'filename': '_29.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_29.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_29.jpg'

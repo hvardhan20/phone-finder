@@ -1,0 +1,633 @@
+2020-02-14 21:34:26,720 - INFO - find_phone.py @89 : main() - Loading model from file mask_rcnn_phone_cfg_0005.h5
+2020-02-14 21:34:37,647 - INFO - find_phone.py @100 : main() - Finding phones in the images directory ./images/
+2020-02-14 21:34:37,679 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 0.jpg
+2020-02-14 21:34:43,729 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 1.jpg
+2020-02-14 21:34:49,259 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 10.jpg
+2020-02-14 21:34:54,490 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 100.jpg
+2020-02-14 21:34:59,718 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 101.jpg
+2020-02-14 21:35:05,317 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 102.jpg
+2020-02-14 21:35:10,346 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 103.jpg
+2020-02-14 21:35:15,548 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 104.jpg
+2020-02-14 21:35:21,476 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 105.jpg
+2020-02-14 21:35:26,551 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 106.jpg
+2020-02-14 21:35:31,573 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 107.jpg
+2020-02-14 21:35:37,468 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 108.jpg
+2020-02-14 21:35:43,350 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 109.jpg
+2020-02-14 21:35:49,324 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 11.jpg
+2020-02-14 21:35:55,226 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 110.jpg
+2020-02-14 21:36:01,237 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 111.jpg
+2020-02-14 21:36:07,129 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 112.jpg
+2020-02-14 21:36:13,039 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 113.jpg
+2020-02-14 21:36:19,236 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 114.jpg
+2020-02-14 21:36:25,620 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 115.jpg
+2020-02-14 21:36:32,361 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 116.jpg
+2020-02-14 21:36:38,725 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 117.jpg
+2020-02-14 21:36:45,443 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 118.jpg
+2020-02-14 21:36:51,397 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 119.jpg
+2020-02-14 21:36:57,261 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 12.jpg
+2020-02-14 21:37:03,359 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 120.jpg
+2020-02-14 21:37:08,414 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 121.jpg
+2020-02-14 21:37:13,553 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 122.jpg
+2020-02-14 21:37:19,355 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 123.jpg
+2020-02-14 21:37:25,212 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 124.jpg
+2020-02-14 21:37:30,944 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 125.jpg
+2020-02-14 21:37:36,887 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 126.jpg
+2020-02-14 21:37:42,855 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 127.jpg
+2020-02-14 21:37:48,741 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 128.jpg
+2020-02-14 21:37:54,744 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 129.jpg
+2020-02-14 21:38:00,734 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 13.jpg
+2020-02-14 21:38:06,659 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 130.jpg
+2020-02-14 21:38:12,610 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 131.jpg
+2020-02-14 21:38:18,612 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 132.jpg
+2020-02-14 21:38:24,590 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 133.jpg
+2020-02-14 21:38:30,369 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 134.jpg
+2020-02-14 21:38:36,216 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 14.jpg
+2020-02-14 21:38:42,155 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 15.jpg
+2020-02-14 21:38:48,486 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 16.jpg
+2020-02-14 21:38:55,006 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 17.jpg
+2020-02-14 21:39:00,972 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 18.jpg
+2020-02-14 21:39:06,792 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 20.jpg
+2020-02-14 21:39:12,631 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 22.jpg
+2020-02-14 21:39:19,218 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 23.jpg
+2020-02-14 21:39:25,193 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 24.jpg
+2020-02-14 21:39:31,667 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 25.jpg
+2020-02-14 21:39:37,552 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 26.jpg
+2020-02-14 21:39:43,249 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 27.jpg
+2020-02-14 21:39:49,098 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 29.jpg
+2020-02-14 21:39:54,915 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 3.jpg
+2020-02-14 21:40:01,098 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 30.jpg
+2020-02-14 21:40:06,967 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 31.jpg
+2020-02-14 21:40:12,802 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 32.jpg
+2020-02-14 21:40:18,532 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 33.jpg
+2020-02-14 21:40:24,212 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 34.jpg
+2020-02-14 21:40:30,190 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 35.jpg
+2020-02-14 21:40:36,009 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 36.jpg
+2020-02-14 21:40:41,797 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 37.jpg
+2020-02-14 21:40:47,729 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 38.jpg
+2020-02-14 21:40:53,600 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 39.jpg
+2020-02-14 21:40:59,374 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 4.jpg
+2020-02-14 21:41:05,306 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 40.jpg
+2020-02-14 21:41:11,121 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 41.jpg
+2020-02-14 21:41:17,015 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 42.jpg
+2020-02-14 21:41:22,799 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 43.jpg
+2020-02-14 21:41:28,702 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 44.jpg
+2020-02-14 21:41:34,508 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 45.jpg
+2020-02-14 21:41:40,926 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 46.jpg
+2020-02-14 21:41:46,969 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 47.jpg
+2020-02-14 21:41:52,824 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 48.jpg
+2020-02-14 21:41:58,682 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 49.jpg
+2020-02-14 21:42:04,753 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 5.jpg
+2020-02-14 21:42:10,605 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 50.jpg
+2020-02-14 21:42:16,413 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 51.jpg
+2020-02-14 21:42:22,167 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 52.jpg
+2020-02-14 21:42:27,974 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 53.jpg
+2020-02-14 21:42:33,665 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 54.jpg
+2020-02-14 21:42:39,635 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 55.jpg
+2020-02-14 21:42:45,558 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 57.jpg
+2020-02-14 21:42:51,347 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 58.jpg
+2020-02-14 21:42:57,171 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 59.jpg
+2020-02-14 21:43:03,068 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 6.jpg
+2020-02-14 21:43:08,799 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 60.jpg
+2020-02-14 21:43:14,604 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 61.jpg
+2020-02-14 21:43:20,421 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 62.jpg
+2020-02-14 21:43:26,262 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 63.jpg
+2020-02-14 21:43:32,628 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 64.jpg
+2020-02-14 21:43:38,727 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 66.jpg
+2020-02-14 21:43:44,833 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 67.jpg
+2020-02-14 21:43:51,184 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 68.jpg
+2020-02-14 21:43:57,344 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 69.jpg
+2020-02-14 21:44:03,461 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 7.jpg
+2020-02-14 21:44:09,416 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 70.jpg
+2020-02-14 21:44:15,624 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 71.jpg
+2020-02-14 21:44:21,754 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 72.jpg
+2020-02-14 21:44:27,956 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 73.jpg
+2020-02-14 21:44:34,265 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 74.jpg
+2020-02-14 21:44:41,135 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 75.jpg
+2020-02-14 21:44:47,199 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 76.jpg
+2020-02-14 21:44:53,152 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 77.jpg
+2020-02-14 21:44:59,106 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 78.jpg
+2020-02-14 21:45:05,215 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 79.jpg
+2020-02-14 21:45:11,232 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 8.jpg
+2020-02-14 21:45:17,267 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 80.jpg
+2020-02-14 21:45:23,243 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 81.jpg
+2020-02-14 21:45:29,172 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 82.jpg
+2020-02-14 21:45:35,000 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 83.jpg
+2020-02-14 21:45:40,906 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 84.jpg
+2020-02-14 21:45:46,923 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 85.jpg
+2020-02-14 21:45:52,749 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 86.jpg
+2020-02-14 21:45:58,669 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 87.jpg
+2020-02-14 21:46:04,715 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 88.jpg
+2020-02-14 21:46:10,598 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 89.jpg
+2020-02-14 21:46:16,535 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 9.jpg
+2020-02-14 21:46:22,439 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 90.jpg
+2020-02-14 21:46:28,356 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 91.jpg
+2020-02-14 21:46:34,332 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 92.jpg
+2020-02-14 21:46:40,920 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 93.jpg
+2020-02-14 21:46:47,237 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 94.jpg
+2020-02-14 21:46:53,248 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 95.jpg
+2020-02-14 21:46:59,024 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 96.jpg
+2020-02-14 21:47:05,085 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 97.jpg
+2020-02-14 21:47:10,941 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 98.jpg
+2020-02-14 21:47:16,843 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 99.jpg
+2020-02-14 23:10:58,462 - INFO - find_phone.py @89 : main() - Loading model from file mask_rcnn_phone_cfg_0010.h5
+2020-02-14 23:11:10,263 - INFO - find_phone.py @100 : main() - Finding phones in the images directory ./images/
+2020-02-14 23:11:10,286 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 0.jpg
+2020-02-14 23:11:17,185 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 1.jpg
+2020-02-14 23:11:22,410 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 10.jpg
+2020-02-14 23:11:27,907 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 100.jpg
+2020-02-14 23:11:34,166 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 101.jpg
+2020-02-14 23:11:40,480 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 102.jpg
+2020-02-14 23:11:46,825 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 103.jpg
+2020-02-14 23:11:53,361 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 104.jpg
+2020-02-14 23:11:59,637 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 105.jpg
+2020-02-14 23:12:06,067 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 106.jpg
+2020-02-14 23:12:12,371 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 107.jpg
+2020-02-14 23:12:18,875 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 108.jpg
+2020-02-14 23:12:25,024 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 109.jpg
+2020-02-14 23:12:31,161 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 11.jpg
+2020-02-14 23:12:37,226 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 110.jpg
+2020-02-14 23:12:43,206 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 111.jpg
+2020-02-14 23:12:49,115 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 112.jpg
+2020-02-14 23:12:54,976 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 113.jpg
+2020-02-14 23:13:01,073 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 114.jpg
+2020-02-14 23:13:07,019 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 115.jpg
+2020-02-14 23:13:12,706 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 116.jpg
+2020-02-14 23:13:18,317 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 117.jpg
+2020-02-14 23:13:24,065 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 118.jpg
+2020-02-14 23:13:29,854 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 119.jpg
+2020-02-14 23:13:35,943 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 12.jpg
+2020-02-14 23:13:42,463 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 120.jpg
+2020-02-14 23:13:49,457 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 121.jpg
+2020-02-14 23:13:55,763 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 122.jpg
+2020-02-14 23:14:02,215 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 123.jpg
+2020-02-14 23:14:08,638 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 124.jpg
+2020-02-14 23:14:14,803 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 125.jpg
+2020-02-14 23:14:21,187 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 126.jpg
+2020-02-14 23:14:27,344 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 127.jpg
+2020-02-14 23:14:34,465 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 128.jpg
+2020-02-14 23:14:41,643 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 129.jpg
+2020-02-14 23:14:48,552 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 13.jpg
+2020-02-14 23:14:55,398 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 130.jpg
+2020-02-14 23:15:02,283 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 131.jpg
+2020-02-14 23:15:08,483 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 132.jpg
+2020-02-14 23:15:14,760 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 133.jpg
+2020-02-14 23:15:21,017 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 134.jpg
+2020-02-14 23:15:27,803 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 14.jpg
+2020-02-14 23:15:34,999 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 15.jpg
+2020-02-14 23:15:42,481 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 16.jpg
+2020-02-14 23:15:49,163 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 17.jpg
+2020-02-14 23:15:56,067 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 18.jpg
+2020-02-14 23:16:03,218 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 20.jpg
+2020-02-14 23:16:10,157 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 22.jpg
+2020-02-14 23:16:16,570 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 23.jpg
+2020-02-14 23:16:23,488 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 24.jpg
+2020-02-14 23:16:30,104 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 25.jpg
+2020-02-14 23:16:36,614 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 26.jpg
+2020-02-14 23:16:42,834 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 27.jpg
+2020-02-14 23:16:49,782 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 29.jpg
+2020-02-14 23:16:56,692 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 3.jpg
+2020-02-14 23:17:03,867 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 30.jpg
+2020-02-14 23:17:10,402 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 31.jpg
+2020-02-14 23:17:16,307 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 32.jpg
+2020-02-14 23:17:22,437 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 33.jpg
+2020-02-14 23:17:28,235 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 34.jpg
+2020-02-14 23:17:33,957 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 35.jpg
+2020-02-14 23:17:39,910 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 36.jpg
+2020-02-14 23:17:46,076 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 37.jpg
+2020-02-14 23:17:52,909 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 38.jpg
+2020-02-14 23:17:59,164 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 39.jpg
+2020-02-14 23:18:05,155 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 4.jpg
+2020-02-14 23:18:11,059 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 40.jpg
+2020-02-14 23:18:16,899 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 41.jpg
+2020-02-14 23:18:22,668 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 42.jpg
+2020-02-14 23:18:28,552 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 43.jpg
+2020-02-14 23:18:34,774 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 44.jpg
+2020-02-14 23:18:40,751 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 45.jpg
+2020-02-14 23:18:46,681 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 46.jpg
+2020-02-14 23:18:52,635 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 47.jpg
+2020-02-14 23:18:59,139 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 48.jpg
+2020-02-14 23:19:05,531 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 49.jpg
+2020-02-14 23:19:11,572 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 5.jpg
+2020-02-14 23:19:17,511 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 50.jpg
+2020-02-14 23:19:23,390 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 51.jpg
+2020-02-14 23:19:29,726 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 52.jpg
+2020-02-14 23:19:36,655 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 53.jpg
+2020-02-14 23:19:42,909 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 54.jpg
+2020-02-14 23:19:49,279 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 55.jpg
+2020-02-14 23:19:55,554 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 57.jpg
+2020-02-14 23:20:01,969 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 58.jpg
+2020-02-14 23:20:08,862 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 59.jpg
+2020-02-14 23:20:15,610 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 6.jpg
+2020-02-14 23:20:21,863 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 60.jpg
+2020-02-14 23:20:28,342 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 61.jpg
+2020-02-14 23:20:34,608 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 62.jpg
+2020-02-14 23:20:41,488 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 63.jpg
+2020-02-14 23:20:47,553 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 64.jpg
+2020-02-14 23:20:53,800 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 66.jpg
+2020-02-14 23:21:00,420 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 67.jpg
+2020-02-14 23:21:07,054 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 68.jpg
+2020-02-14 23:21:13,743 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 69.jpg
+2020-02-14 23:21:20,543 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 7.jpg
+2020-02-14 23:21:27,626 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 70.jpg
+2020-02-14 23:21:34,831 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 71.jpg
+2020-02-14 23:21:41,766 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 72.jpg
+2020-02-14 23:21:48,594 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 73.jpg
+2020-02-14 23:21:55,638 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 74.jpg
+2020-02-14 23:22:02,611 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 75.jpg
+2020-02-14 23:22:09,100 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 76.jpg
+2020-02-14 23:22:15,440 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 77.jpg
+2020-02-14 23:22:21,973 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 78.jpg
+2020-02-14 23:22:28,356 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 79.jpg
+2020-02-14 23:22:34,741 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 8.jpg
+2020-02-14 23:22:41,388 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 80.jpg
+2020-02-14 23:22:48,084 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 81.jpg
+2020-02-14 23:22:55,400 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 82.jpg
+2020-02-14 23:23:02,025 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 83.jpg
+2020-02-14 23:23:07,954 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 84.jpg
+2020-02-14 23:23:13,743 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 85.jpg
+2020-02-14 23:23:19,480 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 86.jpg
+2020-02-14 23:23:25,259 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 87.jpg
+2020-02-14 23:23:31,087 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 88.jpg
+2020-02-14 23:23:36,803 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 89.jpg
+2020-02-14 23:23:42,576 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 9.jpg
+2020-02-14 23:23:48,295 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 90.jpg
+2020-02-14 23:23:54,515 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 91.jpg
+2020-02-14 23:24:00,481 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 92.jpg
+2020-02-14 23:24:06,336 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 93.jpg
+2020-02-14 23:24:12,128 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 94.jpg
+2020-02-14 23:24:17,943 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 95.jpg
+2020-02-14 23:24:24,055 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 96.jpg
+2020-02-14 23:24:29,788 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 97.jpg
+2020-02-14 23:24:35,546 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 98.jpg
+2020-02-14 23:24:41,278 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 99.jpg
+2020-02-15 01:02:20,365 - INFO - find_phone.py @89 : main() - Loading model from file mask_rcnn_phone_cfg_0010.h5
+2020-02-15 01:02:31,775 - INFO - find_phone.py @100 : main() - Finding phones in the images directory ./images/
+2020-02-15 01:02:31,799 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 0.jpg
+2020-02-15 01:02:37,808 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 1.jpg
+2020-02-15 01:02:42,593 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 10.jpg
+2020-02-15 01:02:48,143 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 100.jpg
+2020-02-15 01:02:53,970 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 101.jpg
+2020-02-15 01:03:00,113 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 102.jpg
+2020-02-15 01:03:05,648 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 103.jpg
+2020-02-15 01:03:11,130 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 104.jpg
+2020-02-15 01:03:16,273 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 105.jpg
+2020-02-15 01:03:22,020 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 106.jpg
+2020-02-15 01:03:26,937 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 107.jpg
+2020-02-15 01:03:32,283 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 108.jpg
+2020-02-15 01:03:38,387 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 109.jpg
+2020-02-15 01:03:44,246 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 11.jpg
+2020-02-15 01:03:50,527 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 110.jpg
+2020-02-15 01:03:57,577 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 111.jpg
+2020-02-15 01:04:05,869 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 112.jpg
+2020-02-15 01:04:12,221 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 113.jpg
+2020-02-15 01:04:19,014 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 114.jpg
+2020-02-15 01:04:26,011 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 115.jpg
+2020-02-15 01:04:32,587 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 116.jpg
+2020-02-15 01:04:39,676 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 117.jpg
+2020-02-15 01:04:47,318 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 118.jpg
+2020-02-15 01:04:53,093 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 119.jpg
+2020-02-15 01:04:59,229 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 12.jpg
+2020-02-15 01:05:06,137 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 120.jpg
+2020-02-15 01:05:12,638 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 121.jpg
+2020-02-15 01:05:19,202 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 122.jpg
+2020-02-15 01:05:25,799 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 123.jpg
+2020-02-15 01:05:32,475 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 124.jpg
+2020-02-15 01:05:39,007 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 125.jpg
+2020-02-15 01:05:45,612 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 126.jpg
+2020-02-15 01:05:52,125 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 127.jpg
+2020-02-15 01:05:58,608 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 128.jpg
+2020-02-15 01:06:05,561 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 129.jpg
+2020-02-15 01:06:11,737 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 13.jpg
+2020-02-15 01:06:19,033 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 130.jpg
+2020-02-15 01:06:25,739 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 131.jpg
+2020-02-15 01:06:33,814 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 132.jpg
+2020-02-15 01:06:41,534 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 133.jpg
+2020-02-15 01:06:48,042 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 134.jpg
+2020-02-15 01:06:54,186 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 14.jpg
+2020-02-15 01:07:00,550 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 15.jpg
+2020-02-15 01:07:07,917 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 16.jpg
+2020-02-15 01:07:14,453 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 17.jpg
+2020-02-15 01:07:20,681 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 18.jpg
+2020-02-15 01:07:26,899 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 20.jpg
+2020-02-15 01:07:34,013 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 22.jpg
+2020-02-15 01:07:40,662 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 23.jpg
+2020-02-15 01:07:47,731 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 24.jpg
+2020-02-15 01:07:53,868 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 25.jpg
+2020-02-15 01:08:01,283 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 26.jpg
+2020-02-15 01:08:07,429 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 27.jpg
+2020-02-15 01:08:13,253 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 29.jpg
+2020-02-15 01:08:19,388 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 3.jpg
+2020-02-15 01:08:25,416 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 30.jpg
+2020-02-15 01:08:31,888 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 31.jpg
+2020-02-15 01:08:37,757 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 32.jpg
+2020-02-15 01:08:43,430 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 33.jpg
+2020-02-15 01:08:49,148 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 34.jpg
+2020-02-15 01:08:54,814 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 35.jpg
+2020-02-15 01:09:00,640 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 36.jpg
+2020-02-15 01:09:07,149 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 37.jpg
+2020-02-15 01:09:13,814 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 38.jpg
+2020-02-15 01:09:20,554 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 39.jpg
+2020-02-15 01:09:26,380 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 4.jpg
+2020-02-15 01:09:32,170 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 40.jpg
+2020-02-15 01:09:37,977 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 41.jpg
+2020-02-15 01:09:44,030 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 42.jpg
+2020-02-15 01:09:49,771 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 43.jpg
+2020-02-15 01:09:55,440 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 44.jpg
+2020-02-15 01:10:01,433 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 45.jpg
+2020-02-15 01:10:07,166 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 46.jpg
+2020-02-15 01:10:12,894 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 47.jpg
+2020-02-15 01:10:18,721 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 48.jpg
+2020-02-15 01:10:24,564 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 49.jpg
+2020-02-15 01:10:30,707 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 5.jpg
+2020-02-15 01:10:36,574 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 50.jpg
+2020-02-15 01:10:42,251 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 51.jpg
+2020-02-15 01:10:47,960 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 52.jpg
+2020-02-15 01:10:53,637 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 53.jpg
+2020-02-15 01:10:59,323 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 54.jpg
+2020-02-15 01:11:05,345 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 55.jpg
+2020-02-15 01:11:11,067 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 57.jpg
+2020-02-15 01:11:16,799 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 58.jpg
+2020-02-15 01:11:22,581 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 59.jpg
+2020-02-15 01:11:28,315 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 6.jpg
+2020-02-15 01:11:34,031 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 60.jpg
+2020-02-15 01:11:39,700 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 61.jpg
+2020-02-15 01:11:45,353 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 62.jpg
+2020-02-15 01:11:50,983 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 63.jpg
+2020-02-15 01:11:56,662 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 64.jpg
+2020-02-15 01:12:02,568 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 66.jpg
+2020-02-15 01:12:08,221 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 67.jpg
+2020-02-15 01:12:13,885 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 68.jpg
+2020-02-15 01:12:19,530 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 69.jpg
+2020-02-15 01:12:25,199 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 7.jpg
+2020-02-15 01:12:30,886 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 70.jpg
+2020-02-15 01:12:36,577 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 71.jpg
+2020-02-15 01:12:42,226 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 72.jpg
+2020-02-15 01:12:47,884 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 73.jpg
+2020-02-15 01:12:53,576 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 74.jpg
+2020-02-15 01:12:59,233 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 75.jpg
+2020-02-15 01:13:05,186 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 76.jpg
+2020-02-15 01:13:10,973 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 77.jpg
+2020-02-15 01:13:16,979 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 78.jpg
+2020-02-15 01:13:22,694 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 79.jpg
+2020-02-15 01:13:28,355 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 8.jpg
+2020-02-15 01:13:34,116 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 80.jpg
+2020-02-15 01:13:39,783 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 81.jpg
+2020-02-15 01:13:45,438 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 82.jpg
+2020-02-15 01:13:51,108 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 83.jpg
+2020-02-15 01:13:56,757 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 84.jpg
+2020-02-15 01:14:02,649 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 85.jpg
+2020-02-15 01:14:08,344 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 86.jpg
+2020-02-15 01:14:14,089 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 87.jpg
+2020-02-15 01:14:19,872 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 88.jpg
+2020-02-15 01:14:25,702 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 89.jpg
+2020-02-15 01:14:31,415 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 9.jpg
+2020-02-15 01:14:37,101 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 90.jpg
+2020-02-15 01:14:42,754 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 91.jpg
+2020-02-15 01:14:48,408 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 92.jpg
+2020-02-15 01:14:54,078 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 93.jpg
+2020-02-15 01:14:59,733 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 94.jpg
+2020-02-15 01:15:05,651 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 95.jpg
+2020-02-15 01:15:11,287 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 96.jpg
+2020-02-15 01:15:16,855 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 97.jpg
+2020-02-15 01:15:22,511 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 98.jpg
+2020-02-15 01:15:28,229 - INFO - find_phone.py @50 : find_phones() - Predicting phone location in 99.jpg
+2020-02-15 01:20:01,963 - INFO - train_phone_finder.py @24 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-17 23:38:37,304 - INFO - find_phone.py @89 : main() - Loading model from file mask_rcnn_phone_cfg_0010.h5
+2020-02-17 23:38:48,430 - INFO - find_phone.py @92 : main() - Finding phone in the image ./images/12.jpg/
+2020-02-17 23:39:34,555 - INFO - find_phone.py @89 : main() - Loading model from file mask_rcnn_phone_cfg_0010.h5
+2020-02-17 23:39:44,952 - INFO - find_phone.py @100 : main() - Finding phones in the images directory ./images/21.jpg/
+2020-02-17 23:40:27,396 - INFO - find_phone.py @89 : main() - Loading model from file mask_rcnn_phone_cfg_0010.h5
+2020-02-17 23:40:37,920 - INFO - find_phone.py @100 : main() - Finding phones in the images directory ./images/21.jpg/
+2020-02-17 23:41:30,888 - INFO - find_phone.py @89 : main() - Loading model from file mask_rcnn_phone_cfg_0010.h5
+2020-02-17 23:41:41,177 - INFO - find_phone.py @92 : main() - Finding phone in the image ./images/20.jpg/
+2020-02-19 18:00:14,487 - INFO - train_phone_finder.py @24 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-19 18:00:20,759 - INFO - train_phone_finder.py @27 : train_model_from_dataset() - Loading weights
+2020-02-19 18:00:27,120 - INFO - train_phone_finder.py @30 : train_model_from_dataset() - Starting model training...
+2020-02-19 18:01:04,197 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_58', 'source': 'dataset', 'path': './images/_58.jpg', 'filename': '_58.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_58.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_58.jpg'
+2020-02-19 18:01:04,648 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_45', 'source': 'dataset', 'path': './images/_45.jpg', 'filename': '_45.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_45.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_45.jpg'
+2020-02-19 18:01:04,658 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_121', 'source': 'dataset', 'path': './images/_121.jpg', 'filename': '_121.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_121.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_121.jpg'
+2020-02-19 18:01:54,486 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_127', 'source': 'dataset', 'path': './images/_127.jpg', 'filename': '_127.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_127.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_127.jpg'
+2020-02-19 18:01:54,497 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_60', 'source': 'dataset', 'path': './images/_60.jpg', 'filename': '_60.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_60.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_60.jpg'
+2020-02-19 18:01:54,868 - ERROR - model.py @1810 : data_generator() - Error processing image {'id': '_29', 'source': 'dataset', 'path': './images/_29.jpg', 'filename': '_29.jpg'}
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_29.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1709, in data_generator
+    use_mini_mask=config.USE_MINI_MASK)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\mrcnn\model.py", line 1212, in load_image_gt
+    mask, class_ids = dataset.load_mask(image_id)
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 86, in load_mask
+    box, w, h = self.extract_boxes(info['filename'])
+  File "D:\Users\hvard\PycharmProjects\BrainCorp\phone_config_dataset.py", line 78, in extract_boxes
+    x = self.data.loc[filename].x
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1767, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 1964, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexing.py", line 624, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\generic.py", line 3537, in xs
+    loc = self.index.get_loc(key)
+  File "D:\Users\hvard\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1618, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1626, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '_29.jpg'
+2020-02-19 18:06:57,792 - INFO - train_phone_finder.py @24 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-19 18:07:03,970 - INFO - train_phone_finder.py @27 : train_model_from_dataset() - Loading weights
+2020-02-19 18:07:09,516 - INFO - train_phone_finder.py @30 : train_model_from_dataset() - Starting model training...
+2020-02-19 18:11:24,590 - INFO - train_phone_finder.py @24 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-19 18:11:30,806 - INFO - train_phone_finder.py @27 : train_model_from_dataset() - Loading weights
+2020-02-19 18:11:36,256 - INFO - train_phone_finder.py @30 : train_model_from_dataset() - Starting model training...
+2020-02-19 18:12:04,350 - INFO - train_phone_finder.py @24 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-19 18:12:10,403 - INFO - train_phone_finder.py @27 : train_model_from_dataset() - Loading weights
+2020-02-19 18:12:15,952 - INFO - train_phone_finder.py @30 : train_model_from_dataset() - Starting model training...
+2020-02-19 18:36:20,073 - INFO - find_phone.py @89 : main() - Loading model from file ./training_model\phone_cfgdss\mask_rcnn_phone_cfg_0003.h5
+2020-02-19 18:36:30,974 - INFO - find_phone.py @92 : main() - Finding phone in the image ./images/20.jpg/
+2020-02-19 18:36:37,061 - INFO - find_phone.py @98 : main() - Phone not found
