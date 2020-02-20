@@ -13,6 +13,7 @@ logger.disabled = PARAMS['trainer_logging_disable']
 
 
 def train_model_from_dataset(path):
+    print("training model")
     try:
         trainset = PhoneDataSet(path)
         trainset.load_dataset(purpose='train')
