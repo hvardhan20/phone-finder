@@ -28,6 +28,7 @@ with open(__LOGGING_PATH, 'rt') as f:
     logging.config.dictConfig(config)
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
     logging.getLogger('tensorflow').disabled = True
+    print("finished logging")
 
 
 def update_params_with_latest_model():

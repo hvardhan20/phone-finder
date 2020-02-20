@@ -1,5 +1,5 @@
 {
-    "training_model_path": "/content",
+    "training_model_path": "/content/",
     "model_file_path": "/content/drive/My Drive/model.h5",
     "class_config_name": "phone_cfg",
     "number_of_epoch_steps": 150,
