@@ -3,10 +3,12 @@
     "model_file_path": "/content/drive/My Drive/model.h5",
     "class_config_name": "phone_cfg",
     "number_of_epoch_steps": 150,
-    "number_of_epochs": 5,
+    "number_of_epochs": 10,
     "number_of_classes": 2,
-    "bbox_x_offset": 24,
-    "bbox_y_offset": 24,
+    "bbox_x_offset": 23,
+    "bbox_y_offset": 23,
+    "test_size": 0.1,
+    "random_seed": 3,
     "find_phone_logging_disable": false,
     "trainer_logging_disable": false
 }

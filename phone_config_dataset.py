@@ -55,8 +55,10 @@ class PhoneDataSet(Dataset):
         self.data = pd.read_json(json.dumps(labels), orient='index')
         self.data.index.name = 'file'
 
-    def load_dataset(self, from_path=None, purpose='train', test_size=0.05, train_size=0.95, class_name="phone", seed=3):
+    def load_dataset(self, from_path=None, purpose='train', test_size=PARAMS['test_size'], class_name="phone",
+                     seed=PARAMS['random_seed']):
         self.add_class(source="dataset", class_id=1, class_name=class_name)
+        train_size = 1 - test_size
         images_dir = from_path if from_path else self.path
         dir_npa = np.asarray(os.listdir(images_dir))
         data_set_size = len(dir_npa)

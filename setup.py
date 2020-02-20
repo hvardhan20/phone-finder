@@ -12,9 +12,12 @@ def install_dependencies():
     except Exception as e:
         print(e)
         subprocess.check_call([sys.executable, "-m", "pip", "install", "git+https://github.com/matterport/Mask_RCNN.git"])
-    req_file = os.getcwd() + '/requirements.txt'
     print('Installing requirements')
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", sys.argv[1]])
+    try:
+        req_file = sys.argv[1]
+    except:
+        req_file = 'requirements.txt'
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", req_file])
     print('Setup complete')
 
 

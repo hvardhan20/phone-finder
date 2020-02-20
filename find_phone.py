@@ -36,11 +36,6 @@ class PhoneFinder:
             return centroid
 
     def find_phones(self, images_dir, show=False):
-        font = cv2.FONT_HERSHEY_SIMPLEX
-        bottom_left_corner = (350, 320)
-        font_scale = 0.6
-        font_color = (0, 0, 0)
-        line_type = 2
         images_centroids = {}
         for image_file in os.listdir(images_dir):
             if image_file.endswith('.jpg'):
@@ -55,15 +50,7 @@ class PhoneFinder:
                     normed = normalize(*centroid)
                     images_centroids[image_file] = normed
                     if show:
-                        # cv2.rectangle(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
-                        img = cv2.circle(img, centroid, 5, (0, 0, 255), 1)
-                        cv2.putText(img, ' '.join([str(i) for i in normed]),
-                                    bottom_left_corner,
-                                    font,
-                                    font_scale,
-                                    font_color,
-                                    line_type)
-                        cv2.imwrite(images_dir + '_' + image_file, img)
+                        show_prediction(img, normed, images_dir, image_file, centroid=centroid)
                 elif bboxes_found > 1:
                     images_centroids[image_file] = f"Found {bboxes_found}"
                 else:
@@ -77,6 +64,23 @@ class PhoneFinder:
         # make prediction
         prediction = self.model.detect(sample, verbose=0)[0]
         return prediction['rois']
+
+
+def show_prediction(img, normed, images_dir, image_file, centroid=None):
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    bottom_left_corner = (350, 320)
+    font_scale = 0.6
+    font_color = (0, 0, 0)
+    line_type = 2
+    img = cv2.circle(img, centroid, 5, (0, 0, 255), 1)
+    # cv2.rectangle(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
+    cv2.putText(img, ' '.join([str(i) for i in normed]),
+                bottom_left_corner,
+                font,
+                font_scale,
+                font_color,
+                line_type)
+    cv2.imwrite(images_dir + '_' + image_file, img)
 
 
 def main(args):
