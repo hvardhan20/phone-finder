@@ -8,7 +8,6 @@ from phone_config_dataset import PhoneConfig, PhoneDataSet
 from mrcnn.model import MaskRCNN
 from mrcnn.visualize import display_instances
 from mrcnn.utils import extract_bboxes
-from keras.utils import plot_model
 
 logger = logging.getLogger(__name__)
 logger.disabled = PARAMS['disable_trainer_logging']
@@ -40,7 +39,8 @@ def train_model_from_dataset(path):
         model.load_weights(model_weights, by_name=True,
                            exclude=PARAMS["layers_to_exclude_while_training"])
         logger.info('Starting model training...')
-        plot_model(model, to_file='model.png')
+        from keras.utils.vis_utils import plot_model
+        plot_model(model.keras_model, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
         # model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'],
         #             layers=PARAMS["layers"])
         return True
