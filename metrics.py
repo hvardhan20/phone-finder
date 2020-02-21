@@ -14,10 +14,14 @@ from mrcnn import visualize
 logger = logging.getLogger(__name__)
 logger.disabled = PARAMS['disable_trainer_logging']
 
+APs = []
+recalls = []
+
 
 def evaluate_model(dataset, model, cfg):
-    APs = list()
-    recalls = list()
+    global APs, recalls
+    APs = []
+    recalls = []
     for image_id in dataset.image_ids:
         image, image_meta, gt_class_id, gt_bbox, gt_mask = load_image_gt(dataset, cfg, image_id, use_mini_mask=False)
         scaled_image = mold_image(image, cfg)
@@ -29,7 +33,6 @@ def evaluate_model(dataset, model, cfg):
         APs.append(AP)
         recalls.append(recall)
     mAP = mean(APs)
-    visualize.plot_precision_recall(0.75, APs, recalls)
     return mAP, mean(recalls)
 
 try:
@@ -61,3 +64,4 @@ print("Train mean absolute precision: %.3f recalls: %.3f" % (train_mean_abs_prec
 # evaluate model on test dataset
 test_mean_abs_precision, test_recalls = evaluate_model(testset, model, config)
 print("Test mean absolute precision: %.3f recalls: %.3f" % (test_mean_abs_precision, test_recalls))
+visualize.plot_precision_recall(0.75, APs, recalls)
