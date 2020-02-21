@@ -17,6 +17,7 @@ logger.disabled = PARAMS['disable_trainer_logging']
 
 def evaluate_model(dataset, model, cfg):
     APs = list()
+    recalls = list()
     for image_id in dataset.image_ids:
         image, image_meta, gt_class_id, gt_bbox, gt_mask = load_image_gt(dataset, cfg, image_id, use_mini_mask=False)
         scaled_image = mold_image(image, cfg)
@@ -24,8 +25,11 @@ def evaluate_model(dataset, model, cfg):
         yhat = model.detect(sample, verbose=0)
         r = yhat[0]
         AP, _, _, _ = compute_ap(gt_bbox, gt_class_id, gt_mask, r["rois"], r["class_ids"], r["scores"], r['masks'])
+        recall, ids = compute_recall(r["rois"], gt_bbox, 0.75)
         APs.append(AP)
+        recalls.append(recall)
     mAP = mean(APs)
+    visualize.plot_precision_recall(0.75, APs, recalls)
     return mAP
 
 try:
