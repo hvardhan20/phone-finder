@@ -30,7 +30,7 @@ def evaluate_model(dataset, model, cfg):
         recalls.append(recall)
     mAP = mean(APs)
     visualize.plot_precision_recall(0.75, APs, recalls)
-    return mAP
+    return mAP, mean(recalls)
 
 try:
     path = sys.argv[1]
@@ -56,8 +56,8 @@ else:
     model_weights = model.get_imagenet_weights()
 model.load_weights(model_weights, by_name=True)
 # evaluate model on training dataset
-train_mean_abs_precision = evaluate_model(trainset, model, config)
-print("Train mean absolute precision: %.3f" % train_mean_abs_precision)
+train_mean_abs_precision, recalls = evaluate_model(trainset, model, config)
+print("Train mean absolute precision: %.3f recalls: %.3f" % (train_mean_abs_precision, recalls))
 # evaluate model on test dataset
-test_mean_abs_precision = evaluate_model(testset, model, config)
-print("Test mean absolute precision: %.3f" % test_mean_abs_precision)
+test_mean_abs_precision, test_recalls = evaluate_model(testset, model, config)
+print("Test mean absolute precision: %.3f recalls: %.3f" % (test_mean_abs_precision, test_recalls))
