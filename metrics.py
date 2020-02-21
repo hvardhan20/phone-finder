@@ -8,7 +8,8 @@ from phone_config_dataset import PhoneConfig, PhoneDataSet, PredictionConfig
 from numpy import expand_dims
 from numpy import mean
 from mrcnn.model import MaskRCNN, load_image_gt, mold_image
-from mrcnn.utils import compute_ap
+from mrcnn.utils import compute_ap, compute_recall
+from mrcnn import visualize
 
 logger = logging.getLogger(__name__)
 logger.disabled = PARAMS['disable_trainer_logging']
