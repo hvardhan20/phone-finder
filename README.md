@@ -4,12 +4,13 @@ This project provides a model trainer to predict the location of a phone in a gi
 
 ## Getting Started
 
-The main runnable files in this project are `train_phone_finder.py` and `find_phone.py`
+The main runnable files in this project are `train_phone_finder.py`, for training the phone finder 
+model and `find_phone.py` is the phone localization module. 
 
 ### Prerequisites
 
-Please try to run this project from the root of the project directory as much as possible.
-Command line arguments **CAN BE ABSOLUTE**.
+**Please run this project from the root of the project directory**.
+Command line arguments **can be absolute**.
 From the root of this project directory structure, run the `setup.py` script as 
 ```
 python setup.py
@@ -57,11 +58,17 @@ image data set directory with the `labels.txt` inside the path as
 python train_phone_finder.py ./images
 ```
 
-##### **CAVEAT**
+##### **CAVEAT!**
 Model training can take a long time if you're running without a significantly powerful GPU on the system.
-Please train the model on a system with CUDA enabled card with compute compatibility higher than 3.5
+Please train the model on a system with tensorflow-gpu<=1.15 installed, and a CUDA enabled 
+graphic card with compute compatibility higher than 3.5. With the right configuration,
+the model can be trained in 20-30 minutes (or even less. Depends on the number of epochs and steps per epoch). 
+Otherwise, please be patient for up to 8 hours. 😀
 
-If you cannot train a model, you can use the model bundled with this program.
+If you cannot train a model, you can use the pickled model bundled with this program.
+The epoch vs loss graph for this model with epoch on x-axis and loss on y-axis is
+![Alt text](./loss.svg)
+
 
 ## Running the tests - Predictions
 

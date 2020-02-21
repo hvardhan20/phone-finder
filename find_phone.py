@@ -116,7 +116,7 @@ def main(args):
 
 if __name__ == '__main__':
     try:
-        # update_params_with_latest_model()
+        update_params_with_latest_model()
         parser = argparse.ArgumentParser(description="Phone finder")
         parser.add_argument("path", help="Path to the image to be tested")
         args = parser.parse_args()

@@ -8,6 +8,7 @@ from phone_config_dataset import PhoneConfig, PhoneDataSet
 from mrcnn.model import MaskRCNN
 from mrcnn.visualize import display_instances
 from mrcnn.utils import extract_bboxes
+from keras.utils import plot_model
 
 logger = logging.getLogger(__name__)
 logger.disabled = PARAMS['disable_trainer_logging']
@@ -23,17 +24,8 @@ def train_model_from_dataset(path):
         testset.load_dataset(purpose='test')
         testset.prepare()
 
-        # for image_id in range(130):
-        #     try:
-        #         image = trainset.load_image(image_id)
-        #         # load the masks and the class ids
-        #         mask, class_ids = trainset.load_mask(image_id)
-        #         # extract bounding boxes from the masks
-        #         bbox = extract_bboxes(mask)
-        #         # display image with masks and bounding boxes
-        #         display_instances(image, bbox, mask, class_ids, trainset.class_names)
-        #     except:
-        #         continue
+        # Display the masks created over the test and train datasets
+        # show_dataset_masks(testset)
 
         config = PhoneConfig()
         logger.info('Creating a Mask R-CNN model')
@@ -48,12 +40,27 @@ def train_model_from_dataset(path):
         model.load_weights(model_weights, by_name=True,
                            exclude=PARAMS["layers_to_exclude_while_training"])
         logger.info('Starting model training...')
-        model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'],
-                    layers=PARAMS["layers"])
+        plot_model(model, to_file='model.png')
+        # model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'],
+        #             layers=PARAMS["layers"])
         return True
     except Exception as e:
         logger.error("Error while training the model", e)
         return False
+
+
+def show_dataset_masks(dataset):
+    for image_id in range(130):
+        try:
+            image = dataset.load_image(image_id)
+            # load the masks and the class ids
+            mask, class_ids = dataset.load_mask(image_id)
+            # extract bounding boxes from the masks
+            bbox = extract_bboxes(mask)
+            # display image with masks and bounding boxes
+            display_instances(image, bbox, mask, class_ids, dataset.class_names)
+        except:
+            continue
 
 
 def main(args):

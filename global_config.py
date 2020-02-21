@@ -9,8 +9,8 @@ import os
 import sys
 import logging
 
-__PARAMS_PATH = "config/params.json"
-__LOGGING_PATH = "config/logging.yaml"
+__PARAMS_PATH = "./config/params.json"
+__LOGGING_PATH = "./config/logging.yaml"
 
 with open(__PARAMS_PATH, "rt") as f:
     PARAMS = json.load(f)
@@ -46,4 +46,6 @@ def update_params_with_latest_model():
         with open(__PARAMS_PATH, "wt") as jsonFile:
             json.dump(data, jsonFile, indent=4)
     except Exception as e:
-        print("Error updating params with latest model", e)
+        msg = (f"Error updating params with latest model. Please update the param `trained_weights_file_path` "
+               f"with the path to the latest model manually")
+        print(msg, e)
