@@ -64,6 +64,8 @@ print("Train mean absolute precision: %.3f recalls: %.3f" % (train_mean_abs_prec
 # evaluate model on test dataset
 test_mean_abs_precision, test_recalls = evaluate_model(testset, model, config)
 print("Test mean absolute precision: %.3f recalls: %.3f" % (test_mean_abs_precision, test_recalls))
+print(APs)
+print(recalls)
 import matplotlib.pyplot as plt
 _, ax = plt.subplots(1)
 ax.set_title("Precision-Recall Curve. AP@50 = {:.3f}".format(0.75))
