@@ -1,6 +1,6 @@
 # Phone Finder
 
-This project provides a model trainer to predict the location (coordinates) of a phone in a given 
+This project provides a Mask R-CNN model trainer to predict the location (coordinates) of a phone in a given 
 image or a path to a directory of images. 
  
 ### Prerequisites and setup
@@ -46,6 +46,7 @@ and finder module. Details about each param is listed below
     "disable_find_phone_logging": <Boolean value as false or true. true for disable logging>,
     "disable_trainer_logging": <Boolean value as false or true. true for disable logging>,
     "disable_error_reporting": <Boolean value as false or true. true for disable logging>,
+    "show_predictions": <Boolean value to determine if you see the predicted location of center of phone>
     "predicted_radius": <Radius of the small cirle drawn on image while displaying predicted center of phone>
 }
 ```
@@ -61,6 +62,13 @@ python train_phone_finder.py ./images
 ```
 
 ## How does this stuff work
+First, we prepare our dataset of images. For the Mask R-CNN model to work, we need to create a region of mask
+over the phone in each image. We need to know the bounding box of each phone. But our dataset is annotated 
+with only the center coordinate of the phone. To get the box around the phone, I am calculating a box
+using some pre-defined X and Y offsets. These offsets can be configured in the `params.json` file.
+This approach is not very dynamic and might fail to get the correct bounding boxes in certain cases (If the 
+picture is clicked close to phone). A better way to get the bound box would be to find contours around the 
+annotated center of phone. Once we prepare the masks, we are ready to train the model
 
 This Mask R-CNN model is trained by utilizing the concept of **transfer learning**. We take pre-trained model weights on 
 COCO (**C**ommon **O**bjects in **CO**ntext) object detection dataset and tailor it to fit our specific dataset i.e. 
@@ -74,11 +82,12 @@ model.load_weights(model_weights, by_name=True, exclude=PARAMS["layers_to_exclud
  The output layers for the classification label, bounding boxes, 
 and masks can be excluded. This list of layers to exclude can be be specified in the `./config/params.json`.
 
-After the weights are loaded, the new model can be trained on our dataset specifying the hyperparameters
+After the weights are loaded, the new model can be trained on our dataset by tuning the hyperparameters accordingly.
 ```
 model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'], layers=PARAMS["layers"])
 ```
 
+Personally, I found the best prediction results are with 7 or 8 epochs with 120 to 140 steps per epoch.   
 
 ##### **CAVEAT!**
 Model training can take a long time if you're running without a significantly powerful GPU on the system.
@@ -94,6 +103,17 @@ epoch on x-axis and loss on y-axis is
 ![Alt text](./loss.svg)
 
 
+## Why use pre-trained models?
+
+Imagine two people, Mr. Couch Potato and Mr. Athlete. They sign up for soccer training at the same time. Neither of them has ever played soccer and the skills like dribbling, passing, kicking etc. are new to both of them.
+
+Mr. Couch Potato does not move much, and Mr. Athlete does. That is the core difference between the two even before the training has even started. As you can imagine, the skills Mr. Athlete has developed as an athlete (e.g. stamina, speed and even sporting instincts ) are going to be very useful for learning soccer even though Mr. Athlete has never trained for soccer.
+
+Mr. Athlete benefits from his pre-training.
+
+The same holds true for using pre-trained models in Neural Networks. A pre-trained model is trained on a different task than the task at hand but provides a very useful starting point because the features learned while training on the old task are useful for the new task.
+ 
+
 ## Running the tests - Predictions
 
 After the model is trained, the new model file path is automatically updated in the `./config/params.json`.
@@ -108,3 +128,4 @@ python find_phone.py ./images/21.jpg
 ``` 
 Detection of phone does not take as long as training does and is quite fast
 
+#### Author: Sai Harshavardhan Bachina
