@@ -578,3 +578,6 @@
 2020-02-21 02:18:54,863 - INFO - train_phone_finder.py @31 : train_model_from_dataset() - Creating a Mask R-CNN model
 2020-02-21 02:19:01,449 - INFO - train_phone_finder.py @34 : train_model_from_dataset() - Loading weights
 2020-02-21 02:19:07,532 - INFO - train_phone_finder.py @42 : train_model_from_dataset() - Starting model training...
+2020-02-21 02:29:58,031 - INFO - train_phone_finder.py @30 : train_model_from_dataset() - Creating a Mask R-CNN model
+2020-02-21 02:30:04,605 - INFO - train_phone_finder.py @33 : train_model_from_dataset() - Loading weights
+2020-02-21 02:30:11,185 - INFO - train_phone_finder.py @41 : train_model_from_dataset() - Starting model training...

@@ -39,10 +39,10 @@ def train_model_from_dataset(path):
         model.load_weights(model_weights, by_name=True,
                            exclude=PARAMS["layers_to_exclude_while_training"])
         logger.info('Starting model training...')
-        from keras.utils.vis_utils import plot_model
-        plot_model(model.keras_model, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
-        # model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'],
-        #             layers=PARAMS["layers"])
+        # from keras.utils.vis_utils import plot_model
+        # plot_model(model.keras_model, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
+        model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'],
+                    layers=PARAMS["layers"])
         return True
     except Exception as e:
         logger.error("Error while training the model", e)

@@ -58,6 +58,17 @@ image data set directory with the `labels.txt` inside the path as
 python train_phone_finder.py ./images
 ```
 
+## What's happening underneath
+
+This Mask R-CNN model is pre-fit on the COCO (**C**ommon **O**bjects in **CO**ntext) object detection dataset weights. 
+We take this weights file and tailoring it to fit our specific dataset i.e. 
+images of phones. While loading the COCO weights, we remove the class specific output layers so that new 
+output layers can be defined and trained. This is done by specifying the `exclude` argument and listing all of the 
+output layers to exclude or remove from the model after it is loaded. This includes the output 
+layers for the classification label, bounding boxes, and masks. This list of layers to exclude can be 
+be specified in the `./config/params.json`.
+
+
 ##### **CAVEAT!**
 Model training can take a long time if you're running without a significantly powerful GPU on the system.
 Please train the model on a system with tensorflow-gpu<=1.15 installed, and a CUDA enabled 
@@ -65,7 +76,8 @@ graphic card with compute compatibility higher than 3.5. With the right configur
 the model can be trained in 20-30 minutes (or even less. Depends on the number of epochs and steps per epoch). 
 Otherwise, please be patient for up to 8 hours. 😀
 
-If you cannot train a model, you can use the pickled model bundled with this program.
+If you cannot train a model, you can use the pickled model bundled with this program. I trained
+this model on top of COCO weights to fit our phone localization model.
 The epoch vs loss graph for this model with epoch on x-axis and loss on y-axis is
 ![Alt text](./loss.svg)
 
