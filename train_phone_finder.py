@@ -25,7 +25,7 @@ def train_model_from_dataset(path):
         testset.prepare()
 
         # Display the masks created over the test and train datasets
-        show_dataset_masks(testset)
+        # show_dataset_masks(testset)
 
         config = PhoneConfig()
         logger.info('Creating a Mask R-CNN model')
@@ -37,11 +37,11 @@ def train_model_from_dataset(path):
         else:
             model_weights = model.get_imagenet_weights()
 
-        # model.load_weights(model_weights, by_name=True,
-        #                    exclude=PARAMS["layers_to_exclude_while_training"])
+        model.load_weights(model_weights, by_name=True,
+                           exclude=PARAMS["layers_to_exclude_while_training"])
         logger.info('Starting model training...')
-        # model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'],
-        #             layers=PARAMS["layers"])
+        model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'],
+                    layers=PARAMS["layers"])
 
         # plot_model(model.keras_model, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
 

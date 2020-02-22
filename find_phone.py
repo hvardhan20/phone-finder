@@ -19,19 +19,8 @@ class PhoneFinder:
     def __init__(self, model_file):
         self.model_path = model_file
         self.pred_config = PredictionConfig()
-        self.model = MaskRCNN(mode='inference', model_dir='./', config=self.pred_config)
+        self.model = MaskRCNN(mode='inference', model_dir=PARAMS["training_model_path"], config=self.pred_config)
         self.model.load_weights(self.model_path, by_name=True)
-
-    # def find_phone(self, image_path, show=False):
-    #     img = cv2.imread(image_path)
-    #     bbox = self._get_phone_bbox(img)
-    #     if len(bbox) == 1:
-    #         bbox = bbox[0]
-    #         y1, x1, y2, x2 = bbox
-    #         centroid = (int((x1 + x2) / 2), int((y1 + y2) / 2))
-    #         if show:
-    #             show_prediction(img, centroid)
-    #         return centroid
 
     def find_phones(self, target_image_path, is_dir=False, show=False):
         images_centroids = {}
