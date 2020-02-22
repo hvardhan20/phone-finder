@@ -52,8 +52,9 @@ and finder module. Details about each param is listed below
 
 ## Training the model
 
-Tune the hyperparameters from `./config/params.json` and run `train_phone_finder.py` with path to 
-image data set directory with the `labels.txt` inside the path as
+Tune the hyperparameters from `./config/params.json` and specify the path to the `mask_rcnn_coco.h5` weights file. 
+Now run `train_phone_finder.py` with path to image data set directory with the `labels.txt` 
+inside the path as
 
 ```
 python train_phone_finder.py ./images
@@ -86,9 +87,10 @@ graphic card with compute compatibility higher than 3.5. With the right configur
 the model can be trained in 20-30 minutes (or even less. Depends on the number of epochs and steps per epoch). 
 Otherwise, please be patient for up to 8 hours. 😀
 
-If you cannot train a model, you can use the pickled model bundled with this program. I trained
-this model on top of COCO weights to fit our phone localization model.
-The epoch vs loss graph for this model with epoch on x-axis and loss on y-axis is
+If you cannot train a model, you can use the model `mask_rcnn_phone_cfg_0008.h5` bundled with this 
+program for prediction. I trained this model on top of COCO weights to fit our phone localization model 
+with 8 epochs and 150 steps in each epoch. The epoch vs loss graph for this model with 
+epoch on x-axis and loss on y-axis is
 ![Alt text](./loss.svg)
 
 
@@ -96,7 +98,9 @@ The epoch vs loss graph for this model with epoch on x-axis and loss on y-axis i
 
 After the model is trained, the new model file path is automatically updated in the `./config/params.json`.
 If the model training is interrupted in between the path to the new trained model is not updated in params.
-In that case, please provide manually the path to the model file to be used for prediction.
+In that case, please provide manually the path to the model file to be used for prediction in the 
+parameter `trained_weights_file_path`. In order to use the model bundled with this program, update this
+`trained_weights_file_path` parameter's value with `mask_rcnn_phone_cfg_0008.h5`  
 
 Execute the `find_phone.py` with the path to image or directory of images to be predicted like 
 ```

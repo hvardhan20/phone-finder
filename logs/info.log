@@ -749,3 +749,35 @@
 2020-02-22 02:50:43,092 - INFO - find_phone.py @107 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
 2020-02-22 02:53:05,322 - INFO - find_phone.py @107 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
 2020-02-22 02:53:16,098 - INFO - find_phone.py @46 : find_phones() - Predicting phone location in ./images//0.jpg
+2020-02-22 04:04:57,948 - INFO - find_phone.py @96 : main() - Loading model from file mask_rcnn_phone_cfg_0008.h5
+2020-02-22 04:05:35,624 - INFO - find_phone.py @96 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:05:47,857 - INFO - find_phone.py @35 : find_phones() - Predicting phone location in ./images//0.jpg
+2020-02-22 04:05:54,189 - INFO - find_phone.py @35 : find_phones() - Predicting phone location in ./images//1.jpg
+2020-02-22 04:07:42,752 - INFO - find_phone.py @96 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:07:53,098 - INFO - find_phone.py @35 : find_phones() - Predicting phone location in ./images//0.jpg
+2020-02-22 04:07:59,123 - INFO - find_phone.py @35 : find_phones() - Predicting phone location in ./images//1.jpg
+2020-02-22 04:08:04,345 - INFO - find_phone.py @35 : find_phones() - Predicting phone location in ./images//10.jpg
+2020-02-22 04:08:34,597 - INFO - find_phone.py @96 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:08:45,123 - INFO - find_phone.py @35 : find_phones() - Predicting phone location in ./images/0.jpg
+2020-02-22 04:08:51,319 - INFO - find_phone.py @104 : main() - Phone not found
+2020-02-22 04:09:41,687 - INFO - find_phone.py @96 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:10:20,449 - INFO - find_phone.py @35 : find_phones() - Predicting phone location in ./images/0.jpg
+2020-02-22 04:11:55,436 - INFO - find_phone.py @96 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:12:06,063 - INFO - find_phone.py @35 : find_phones() - Predicting phone location in ./images/0.jpg
+2020-02-22 04:12:37,241 - INFO - find_phone.py @96 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:15:59,241 - INFO - find_phone.py @98 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:16:15,538 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//0.jpg at (0.8327, 0.1319)
+2020-02-22 04:16:20,234 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//1.jpg at (0.8694, 0.1656)
+2020-02-22 04:16:24,955 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//10.jpg at (0.4898, 0.4325)
+2020-02-22 04:16:29,682 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//100.jpg at (0.8184, 0.8528)
+2020-02-22 04:16:34,612 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//101.jpg at (0.2, 0.6472)
+2020-02-22 04:16:39,352 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//102.jpg at (0.4531, 0.6227)
+2020-02-22 04:16:44,378 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//103.jpg at (0.2469, 0.7638)
+2020-02-22 04:18:07,133 - INFO - find_phone.py @98 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:18:23,615 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//0.jpg at (0.8327, 0.1319)
+2020-02-22 04:18:28,708 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//1.jpg at (0.8694, 0.1656)
+2020-02-22 04:18:34,445 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//10.jpg at (0.4898, 0.4325)
+2020-02-22 04:18:39,481 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//100.jpg at (0.8184, 0.8528)
+2020-02-22 04:19:57,047 - INFO - find_phone.py @98 : main() - Loading model from file mask_rcnn_phone_cfg_0008_COCO_bbox24_4wrong.h5
+2020-02-22 04:20:13,986 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//0.jpg at (0.8327, 0.1319)
+2020-02-22 04:20:20,362 - INFO - find_phone.py @41 : find_phones() - Predicted phone location in ./images//1.jpg at (0.8694, 0.1656)
