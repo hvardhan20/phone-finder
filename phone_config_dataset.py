@@ -30,7 +30,7 @@ def get_bbox(x, y, x_offset=PARAMS['bbox_x_offset'], y_offset=PARAMS['bbox_y_off
 
 class PredictionConfig(Config):
     NAME = PARAMS['class_config_name']
-    NUM_CLASSES = 1 + 1
+    NUM_CLASSES = PARAMS["number_of_classes"]
     GPU_COUNT = 1
     IMAGES_PER_GPU = 1
 

@@ -1,13 +1,9 @@
 # Phone Finder
 
-This project provides a model trainer to predict the location of a phone in a given image. 
-
-## Getting Started
-
-The main runnable files in this project are `train_phone_finder.py`, for training the phone finder 
-model and `find_phone.py` is the phone localization module. 
-
-### Prerequisites
+This project provides a model trainer to predict the location (coordinates) of a phone in a given 
+image or a path to a directory of images. 
+ 
+### Prerequisites and setup
 
 **Please run this project from the root of the project directory**.
 Command line arguments **can be absolute**.
@@ -22,10 +18,14 @@ Besides Mask R-CNN, there are other packages that are required and are installed
 
 ### Initializing
 
-This program is highly configurable via the `./config/params.json` file. You can configure the locations of
+The main runnable files in this project are `train_phone_finder.py`, for training the phone finder 
+model and `find_phone.py` is the phone localization module.
+
+Although you will not need to change anything as this will run smoothly out of the box,
+the program is highly configurable via the `./config/params.json` file. You can configure the locations of
 training checkpoint models, hyperparameters like number of epochs and number of steps 
 in each epoch, learning rate, layers to trains and exclude. You can also disable logging in trainer
-and finder module. Details about each param is listed below
+and finder module. Details about each param is listed below 
 
 
 ```
@@ -45,7 +45,8 @@ and finder module. Details about each param is listed below
     "random_seed": <Random seed for shuffling dataset>,
     "disable_find_phone_logging": <Boolean value as false or true. true for disable logging>,
     "disable_trainer_logging": <Boolean value as false or true. true for disable logging>,
-    "disable_error_reporting": <Boolean value as false or true. true for disable logging>
+    "disable_error_reporting": <Boolean value as false or true. true for disable logging>,
+    "predicted_radius": <Radius of the small cirle drawn on image while displaying predicted center of phone>
 }
 ```
 
@@ -58,15 +59,24 @@ image data set directory with the `labels.txt` inside the path as
 python train_phone_finder.py ./images
 ```
 
-## What's happening underneath
+## How does this stuff work
 
-This Mask R-CNN model is pre-fit on the COCO (**C**ommon **O**bjects in **CO**ntext) object detection dataset weights. 
-We take this weights file and tailoring it to fit our specific dataset i.e. 
-images of phones. While loading the COCO weights, we remove the class specific output layers so that new 
-output layers can be defined and trained. This is done by specifying the `exclude` argument and listing all of the 
-output layers to exclude or remove from the model after it is loaded. This includes the output 
-layers for the classification label, bounding boxes, and masks. This list of layers to exclude can be 
-be specified in the `./config/params.json`.
+This Mask R-CNN model is trained by utilizing the concept of **transfer learning**. We take pre-trained model weights on 
+COCO (**C**ommon **O**bjects in **CO**ntext) object detection dataset and tailor it to fit our specific dataset i.e. 
+images of phones. While loading the COCO weights, we remove the pre-trained class specific output layers so 
+that new output layers can be defined and trained. Doing this prevents overfitting. This is done by 
+specifying the `exclude` argument and listing all of the output layers to exclude or remove from the model
+after it is loaded at this line
+ ```
+model.load_weights(model_weights, by_name=True, exclude=PARAMS["layers_to_exclude_while_training"])
+```
+ The output layers for the classification label, bounding boxes, 
+and masks can be excluded. This list of layers to exclude can be be specified in the `./config/params.json`.
+
+After the weights are loaded, the new model can be trained on our dataset specifying the hyperparameters
+```
+model.train(trainset, testset, learning_rate=config.LEARNING_RATE, epochs=PARAMS['number_of_epochs'], layers=PARAMS["layers"])
+```
 
 
 ##### **CAVEAT!**
@@ -85,7 +95,10 @@ The epoch vs loss graph for this model with epoch on x-axis and loss on y-axis i
 ## Running the tests - Predictions
 
 After the model is trained, the new model file path is automatically updated in the `./config/params.json`.
-Please execute the `find_phone.py` with the path to image or directory of images to be predicted like 
+If the model training is interrupted in between the path to the new trained model is not updated in params.
+In that case, please provide manually the path to the model file to be used for prediction.
+
+Execute the `find_phone.py` with the path to image or directory of images to be predicted like 
 ```
 python find_phone.py ./images/21.jpg
 ``` 

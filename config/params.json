@@ -1,6 +1,6 @@
 {
     "training_model_path": "./",
-    "trained_weights_file_path": "mask_rcnn_coco.h5",
+    "trained_weights_file_path": "mask_rcnn_phone_cfg_0008.h5",
     "class_config_name": "phone_cfg",
     "number_of_epoch_steps": 100,
     "number_of_epochs": 5,
@@ -14,5 +14,6 @@
     "random_seed": 3,
     "disable_find_phone_logging": false,
     "disable_trainer_logging": false,
-    "disable_error_reporting": false
+    "disable_error_reporting": false,
+    "predicted_radius": 3
 }
