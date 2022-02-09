@@ -1,5 +1,5 @@
 tensorflow==1.15
-tensorflow-gpu==1.15
+tensorflow-gpu==2.5.3
 keras
 opencv-python
 matplotlib
